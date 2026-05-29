@@ -5,6 +5,7 @@ Made by intern: @bassemfarid, no one or nothing else. 🤖
 """
 
 import pygame
+import sprites
 
 pygame.init()  # Initialize all pygame modules
 screen = pygame.display.set_mode((800, 400))  # Create 800x400 window
@@ -20,7 +21,7 @@ players_gravity_speed = 0   # Current vertical speed (increases each frame)
 score = 0                   # Current run score
 high_score = 0              # Best score across all runs
 frame_count = 0             # Counts frames, used to time animations
-egg_speed = 100               # How fast the egg moves left (increases over time)
+egg_speed = 5               # How fast the egg moves left (increases over time)
 
 # --- Level Assets ---
 SKY_SURF = pygame.image.load("graphics/level/sky.png").convert()      # Sky background
