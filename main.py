@@ -131,7 +131,7 @@ while running:
     screen.blit(SKY_SURF, (0, 0))       # Sky fills top portion
     screen.blit(GROUND_SURF, (0, GROUND_Y))  # Ground strip at GROUND_Y
 
-    # ── Active Gameplay ────────────────────────────────────────────────────────
+    # ----------------- Active Gameplay ----------------------
     if is_playing:
         frame_count += 1          # Advance animation timer each frame
         score += 0.05             # ~3 points per second at 60 FPS
@@ -173,7 +173,7 @@ while running:
                 high_score = score
             is_playing = False  # End the run
 
-    # ── End / Start Screen ─────────────────────────────────────────────────────
+    # --- End / Start Screen --------------------------------------------
     else:
         draw_end_screen()  # Overlay on top of the static background
 
